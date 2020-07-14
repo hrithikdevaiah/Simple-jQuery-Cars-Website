@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+}               
+#box1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(2017-Bugatti-Chiron-V20-1080.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box2{
+    height: 100vh;
+    width: 100%;
+    background-image: url(2014-Koenigsegg-Agera-One-1-V4-1080.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box3{
+    height: 100vh;
+    width: 100%;
+    background-image: url(2014-Ferrari-LaFerrari-V9-1080.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box4{
+    height: 100vh;
+    width: 100%;
+    background-image: url(2012-Pagani-Huayra-V12-1080.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box5{
+    height: 100vh;
+    width: 100%;
+    background-image: url(2019-McLaren-Senna-V10-1080.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+h1{
+    font-family: arial black;
+    font-size: 50px;
+    color: cyan;
+    margin: 0px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+    color:greenyellow;
+}
+.bottomright1 {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+    color:cyan;
+    
+    padding: 10px;
+    
+}
+#tests {
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 18px;
+    color: cyan;
+}
+#dbc {
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 18px;
+    color: violet;
+}
+#key {
+    background: pink;
+    padding: 10px;
+    border:1px solid #000;
+}

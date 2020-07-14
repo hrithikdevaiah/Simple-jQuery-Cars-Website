@@ -1,0 +1,107 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="form.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                $("span").text(x += 1);
+            });
+        });
+        $(document).ready(function () {
+            $("body").keydown(function () {
+                $("body").css("background-color", "grey");
+            });
+            $("body").keyup(function () {
+                $("body").css("background-color", "chocolate");
+            });
+        });
+        $(document).ready(function () {
+            $("#ani").click(function () {
+                $(this).animate({ width: "1000px" });
+            });
+            $("#btn2").click(function () {
+                $("#ani").animate({ width: "200px" });
+            });
+        });
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Top 5 Best Hypercars</h1>
+    </center>
+    <div id="box1">
+        <center><a href="Bugatti.html">
+                <h1>Bugatti Chiron</h1>
+            </a></center>
+    </div>
+    <div id="box2">
+        <center><a href="Koenigsegg.html">
+                <h1>Koenigsegg One</h1>
+            </a></center>
+    </div>
+    <div id="box3">
+        <center><a href="Ferrari.html">
+                <h1>Ferrari LaFerrari</h1>
+            </a></center>
+    </div>
+    <div id="box4">
+        <center><a href="Pagani.html">
+                <h1>Pagani Huayra</h1>
+            </a></center>
+    </div>
+    <div id="box5">
+        <center><a href="McLaren.html">
+                <h1>McLaren Senna</h1>
+            </a></center>
+    </div>
+    <div class="bottomright1">
+        <p>Scrolled <span>0</span> times.</p>
+    </div>
+    <center>
+        <h1>Form </h1>
+    </center>
+    <form id="sform">
+        <table width=60% border="2" align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="name" id="sname" size=25></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" id="semail" size=25></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="" id="snum" size=25></td>
+            </tr>
+            <tr>
+                <td>Select the car that you are interested about:</td>
+                <td><select id="scars">
+                        <option value="Bugatti Chiron">Bugatti Chiron</option>
+                        <option value="Koenigsegg One">Koenigsegg One</option>
+                        <option value="Ferrari LaFerrari">Ferrari LaFerrari</option>
+                        <option value="Pagani Huayra">Pagani Huayra</option>
+                        <option value="McLaren Senna">McLaren Senna</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td size="55" colspan="2">
+                    <center><input type="submit" value="Submit"></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="test" style="border:2px solid violet;margin-top:20px;"></div>
+    <center>
+        <div id="ani" style="background:#98bf21;height:150px;width:150px;margin:6px;text-align:center;">
+            <p>For Further Information on Hypercars go to "carsandcars.cf". Where we have in detail information about
+                all of
+                the above cars.<br></p>
+        </div>
+        <button id="btn2">Reset</button>
+    </center>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Bugatti</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $(window).resize(function () {
+                $("span").text(x += 1);
+            });
+        });
+        $(document).ready(function () {
+            $("#tests").hover(function () {
+                $(this).css("background-color", "blue");
+            }, function () {
+                $(this).css("background-color", "green");
+            });
+        });
+        $(document).ready(function () {
+            $("#head").click(function () {
+                $(this).css("color", "red");
+            });
+        });
+        $(document).ready(function () {
+            $("#dbc").dblclick(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body bgcolor="black">
+    <center>
+        <h1 id="head">Ferrari LaFerrari</h1>
+    </center>
+    <center><img src="2014-Ferrari-LaFerrari-V19-1080.jpg" width="1200px" height="630px"></center>
+    <div id="tests">
+        <p>
+            <br>
+            Ferrari’s latest top-of-the-tree hypercar is nothing less than the greatest and most sensational peak that
+            the
+            performance car has ever reached. Powered by an incredible, spine-tingling, naturally aspirated, 789bhp
+            6.3-litre
+            V12 assisted by 161bhp of electric power channelled direct to the rear wheels, the LaFerrari’s powertrain
+            makes an
+            incredible 950bhp all told. Although we never got the chance to strap our timing gear to one,
+            Ferrari claims the car hurls itself to 62mph in just 2.4sec and to 186mph in just 15sec.
+            <br>
+            <br>
+            And yet, in spite of its enormous performance and mind-boggling mechanical complication, the LaFerrari has
+            absurdly benign and exploitable limit handling manners that make it so much more approachable and exciting
+            to
+            drive on a circuit than you’d ever believe it could be.
+            <br>
+            <br>
+            Ferrari charged more than £1million for each car. It made 500 in all, producing the last of them in 2015,
+            and has so far succeeded it only with the FXXK track special and the LaFerrari Aperta convertible.
+            The LaFerrari is a monument to everything Ferrari does singularly well and still our reigning hypercar
+            standard-bearer.
+            <br>
+            <br>
+        </p>
+    </div>
+    <div class="bottomright">
+        <p>Window resized <span>0</span> times.</p>
+    </div>
+    <div id="dbc">
+            <p>The WebPage is Still in Development.Kindly Co-operate.</p>
+        </div>
+</body>
+
+</html>

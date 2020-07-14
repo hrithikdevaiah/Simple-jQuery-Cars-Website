@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>Bugatti</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $(window).resize(function () {
+                $("span").text(x += 1);
+            });
+        });
+        $(document).ready(function () {
+            $("#tests").hover(function () {
+                $(this).css("background-color", "blue");
+            }, function () {
+                $(this).css("background-color", "green");
+            });
+        });
+        $(document).ready(function () {
+            $("#head").click(function () {
+                $(this).css("color", "red");
+            });
+        });
+        $(document).ready(function () {
+            $("#dbc").dblclick(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body bgcolor="black">
+    <center>
+        <h1 id="head">Pagani Huayra</h1>
+    </center>
+    <center><img src="2012-Pagani-Huayra-V9-1080.jpg" width="1200px" height="630px"></center>
+    <div id="tests">
+        <p>
+            <br>
+            The Modenese firm’s latest offering is the Huayra, introduced in 2012, back when 720bhp and 738lb ft
+            seemed like a faintly ludicrous amounts of power and torque to try to put through one driven axle in a road
+            car.
+            <br>
+            <br>
+            Driven by a twin-turbocharged 6.0-litre V12 from Mercedes-AMG, the Huayra did indeed prove itself to be a
+            physically challenging driver’s car from the old-school, with handling demanding respect and every shred
+            of your concentration if you dared disable the stability aids. But it’s beautifully communicative and
+            honest,
+            too, and so rich, immersive and special to drive at almost any speed as to be totally intoxicating.
+            <br>
+            <br>
+            Horacio Pagani’s late stripped-out, lightweight, added-power BC version is one we’ve yet to sample,
+            though, so keep your eyes peeled for an improvement in the Huayra’s rating here if and when we do.
+            <br>
+            <br>
+        </p>
+    </div>
+    <div class="bottomright">
+        <p>Window resized <span>0</span> times.</p>
+    </div>
+    <div id="dbc">
+            <p>The WebPage is Still in Development.Kindly Co-operate.</p>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Bugatti</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $(window).resize(function () {
+                $("span").text(x += 1);
+            });
+        });
+        $(document).ready(function () {
+            $("#tests").hover(function () {
+                $(this).css("background-color", "blue");
+            }, function () {
+                $(this).css("background-color", "green");
+            });
+        });
+        $(document).ready(function () {
+            $("#head").click(function () {
+                $(this).css("color", "red");
+            });
+        });
+        $(document).ready(function () {
+            $("#dbc").dblclick(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body bgcolor="black">
+    <center>
+        <h1 id="head">Koenigsegg One</h1>
+    </center>
+    <center><img src="2014-Koenigsegg-Agera-One-1-V10-1080.jpg" width="1200px" height="630px"></center>
+    <div id="tests">
+        <p>
+            <br>
+            Numbers speak volumes when it comes to describing the quickest thing yet to come out of Ängelholm,
+            Sweden that doesn’t have jet engines and air-to-air missiles. The Koenigsegg One:1 costs £2 million. Its
+            turbocharged,
+            ethanol-fuelled V8 develops more than 1300bhp. In the right conditions, claims its maker, it’s capable of
+            cracking
+            250mph from rest in less than 20sec. And yet it’s easier to drive at sane speeds than our tester could
+            believe,
+            making plenty of torque off boost – although the action of the automated twin-clutch gearbox takes some
+            getting used to.
+            <br>
+            <br>
+            The One:1 is a real white-knuckle ride, by contrast, when you squeeze its accelerator pedal floorwards and
+            listen as those turbochargers spool up, sending greater and greater force towards a pair of rear wheels that
+            can run short of traction even in the higher gears. But when the One:1's aerodynamics
+            start to work and it finally hits its stride above 125mph, it's nothing short of otherworldly.
+            <br>
+            <br>
+        </p>
+    </div>
+    <div class="bottomright">
+        <p>Window resized <span>0</span> times.</p>
+    </div>
+    <div id="dbc">
+            <p>The WebPage is Still in Development.Kindly Co-operate.</p>
+        </div>
+</body>
+
+</html>

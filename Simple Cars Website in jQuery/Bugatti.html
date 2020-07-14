@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>Bugatti</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $(window).resize(function () {
+                $("span").text(x += 1);
+            });
+        });
+        $(document).ready(function () {
+            $("#tests").hover(function () {
+                $(this).css("background-color", "blue");
+            }, function () {
+                $(this).css("background-color", "green");
+            });
+        });
+        $(document).ready(function () {
+            $("#head").click(function () {
+                $(this).css("color", "red");
+            });
+        });
+        $(document).ready(function () {
+            $("#dbc").dblclick(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body bgcolor="black">
+    <center>
+        <h1 id="head">Bugatti Chiron</h1>
+    </center>
+    <center><img src="2017-Bugatti-Chiron-V14-1080.jpg" width="1200px" height="630px"></center>
+    <div id="tests">
+        <p>
+            <br>
+            The Volkswagen Group’s trophy brand, Bugatti, made history when it gave us the fastest production car in the
+            world in 2005.
+            The W16-engined, 987bhp, four-wheel-drive Veyron broke through the 250mph barrier.
+            But it couldn’t and wouldn’t be regarded as the ultimate performance car forever.
+            <br>
+            <br>
+            Enter, in 2016, the Chiron. Where the Veyron used aluminium spaceframe construction, the Chiron has a
+            lighter carbonfibre
+            monocoque. Where the Veyron stopped short of 1200bhp in its final forms, the Chiron ups that to nearly 1500.
+            And where the Veyron left Bugatti’s top speed yardstick at 268mph,
+            the Chiron (which had still to prove how fast it can go as these words were written) is expected to
+            get within touching distance of 290.
+            <br>
+            <br>
+            And if you want a hypercar to make record speeds so easy to achieve, this is the one for you.
+            Bugatti’s more fiercely blown sixteen-cylinder engine certainly has a bit of turbo lag to haul through and
+            isn’t the sweetest-sounding of leviathan lumps – more departing hovercraft or express train than car.
+            But when it starts to surge, it knows absolutely no moderation. The car’s ride is firm and its handling
+            perhaps just a tiny bit underwhelming. But making such incredible speed as attainable as the Chiron makes it
+            remains a towering
+            achievement – it’s utterly remarkable for being so unremarkable.
+            <br>
+            <br>
+        </p>
+    </div>
+    <div class="bottomright">
+        <p>Window resized <span>0</span> times.</p>
+    </div>
+    <div id="dbc">
+        <p>The WebPage is Still in Development.Kindly Co-operate.</p>
+    </div>
+</body>
+</html>

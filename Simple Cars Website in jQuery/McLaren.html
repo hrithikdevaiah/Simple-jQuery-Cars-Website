@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Bugatti</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $(window).resize(function () {
+                $("span").text(x += 1);
+            });
+        });
+        $(document).ready(function () {
+            $("#tests").hover(function () {
+                $(this).css("background-color", "blue");
+            }, function () {
+                $(this).css("background-color", "green");
+            });
+        });
+        $(document).ready(function () {
+            $("#head").click(function () {
+                $(this).css("color", "red");
+            });
+        });
+        $(document).ready(function () {
+            $("#dbc").dblclick(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+
+<body bgcolor="black">
+    <center>
+        <h1 id="head">McLaren Senna</h1>
+    </center>
+    <center><img src="2019-McLaren-Senna-V8-1080.jpg" width="1200px" height="630px"></center>
+    <div id="tests">
+        <p>
+            <br>
+            When McLaren adopted the name of its most revered and tragically fated F1 racing driver to use as the model
+            identity
+            of its latest 'ultimate series' hypercar, a sharp intake of breath was taken throughout the motorsport world
+            and the
+            car industry alike. Could invoking the memory of such a legendary, much-missed figure as Ayrton Senna, and
+            then using
+            it to do something as corporate as selling a new car - any car - ever be made to look like a good idea? Was
+            Ayrton's
+            name really McLaren's to use?
+            <br>
+            <br>
+            The Senna is a car of truly astonishing track abilities. Even though its not the most powerful car to have
+            lapped
+            our dry handling circuit, it has such phenomenal reserves of grip that it smashed our dry handling track lap
+            record
+            by fully a second-and-a-half when we road-tested it in 2018. Developing some 800kg of downforce at its peak,
+            and
+            with a growling V8 of just under 800-horsepower, it's a car you expect to be a nerve-testing challenge on
+            track,
+            and almost impossible to drive on the road. The simple fact is, neither is true.
+            <br>
+            <br>
+            The Senna looks after you, and keeps looking after you with its feedback, stability and drivability, as you
+            hit
+            the kinds of speeds only usually known to prototype racing machines. It's a physical test to drive, but a
+            supreme,
+            unforgettable mental treat. And although it's less broad-batted and usable than most hypercars of its price,
+            its dedication of the business of going quickly, round in two-and-a-half-mile circles, is utterly
+            spellbinding.
+            <br>
+            <br>
+        </p>
+    </div>
+    <div class="bottomright">
+        <p>Window resized <span>0</span> times.</p>
+    </div>
+    <div id="dbc">
+        <p>The WebPage is Still in Development.Kindly Co-operate.</p>
+    </div>
+</body>
+
+</html>
